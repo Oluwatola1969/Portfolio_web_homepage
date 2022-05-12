@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Gudea:wght@700&family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,900;1,600&display=swap');
+
+@import 'config';
+@import 'utilities';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+   font-size: 1rem;
+}
+
+header{
+    width: 100%;
+    background: $secClr;
+
+    .nav{
+        width: 1440px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+
+        .logoContent{
+            display: flex;
+            align-content: center;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .span{
+            width: 19px;
+            background: $accentClr;
+            border-radius: 50%;
+            display: inline-block;
+            height: 19px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 6px;
+        }
+
+        .headerLinks{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 400;
+
+            a{
+                margin-left: 46px;
+                color: $textClr;
+            }
+        }
+
+        .hiremeBtn{
+            background: $accentClr;
+            width: 124px;
+            height: 40px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            
+            a{
+                color: #fff;
+                img{
+                    margin-left: 8.33px;
+                }
+            }
+        }
+    
+    }
+
+   
+    
+}
+
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $secClr;
+    
+    .container{
+       height: 747px; 
+       display: flex;
+       justify-content: center;
+       margin-top: 39px;
+
+       .mainText{
+           margin-top: 119px;
+
+           small{
+               color: $accentClr;
+               font-size: 16px;
+               font-weight: 500;
+           }
+
+           h1{
+               line-height: 78px;
+               width: 479px;
+               height: 326px;
+               font-weight: 700;
+               font-size: 60px;
+               margin: 32px 0;
+           }
+
+           .buttons{
+               display: flex;
+           }
+
+           img{
+               margin-right: 11.5px;
+           }
+
+           .downloadBtn{
+               background-color: transparent;
+               color: $textClr;
+           }
+       }
+   }
+}
+
+

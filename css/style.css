@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Gudea:wght@700&family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,900;1,600&display=swap");
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.btn {
+  width: 204px;
+  height: 70px;
+  border-radius: 50px;
+  background-color: #5E3BEE;
+  color: #fff;
+}
+
+.btn a {
+  font-size: 12px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+header {
+  width: 100%;
+  background: #f9f9fc;
+}
+
+header .nav {
+  width: 1440px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav .logoContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+header .nav .span {
+  width: 19px;
+  background: #5E3BEE;
+  border-radius: 50%;
+  display: inline-block;
+  height: 19px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 6px;
+}
+
+header .nav .headerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+header .nav .headerLinks a {
+  margin-left: 46px;
+  color: #333333;
+}
+
+header .nav .hiremeBtn {
+  background: #5E3BEE;
+  width: 124px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header .nav .hiremeBtn a {
+  color: #fff;
+}
+
+header .nav .hiremeBtn a img {
+  margin-left: 8.33px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f9f9fc;
+}
+
+main .container {
+  height: 747px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 39px;
+}
+
+main .container .mainText {
+  margin-top: 119px;
+}
+
+main .container .mainText small {
+  color: #5E3BEE;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+main .container .mainText h1 {
+  line-height: 78px;
+  width: 479px;
+  height: 326px;
+  font-weight: 700;
+  font-size: 60px;
+  margin: 32px 0;
+}
+
+main .container .mainText .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .mainText img {
+  margin-right: 11.5px;
+}
+
+main .container .mainText .downloadBtn {
+  background-color: transparent;
+  color: #333333;
+}
+/*# sourceMappingURL=style.css.map */
