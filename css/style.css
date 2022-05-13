@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gudea:wght@700&family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,900;1,600&display=swap");
 .container {
-  max-width: 1200px;
+  max-width: 1208px;
   height: 100%;
   margin: 0 auto;
 }
@@ -36,6 +36,21 @@ li {
   font-size: 12px;
 }
 
+.btn:hover {
+  background-color: #7152f0;
+  -webkit-transform: scale(0.985);
+          transform: scale(0.985);
+}
+
+.btn a, .experience, .experience .e_wrapper .e_status, .serviceContent, .serviceCards .card, .about .aboutcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -46,6 +61,9 @@ li {
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
+  scroll-behavior: smooth;
+  -webkit-transition: all .5s  ease;
+  transition: all .5s  ease;
 }
 
 header {
@@ -189,5 +207,229 @@ main .container .mainText img {
 main .container .mainText .downloadBtn {
   background-color: transparent;
   color: #333333;
+}
+
+main .container .mainText .downloadBtn:hover {
+  border: 1px solid #5E3BEE;
+}
+
+.experience {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1208px;
+  height: 314px;
+  margin: 0 auto;
+}
+
+.experience .e_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+  padding: 93px 116px;
+  margin: 0 auto;
+}
+
+.experience .e_wrapper .e_status {
+  width: 271px;
+  height: 88px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: 0.5px;
+  margin-left: 40px;
+}
+
+.experience .e_wrapper .e_status h2 {
+  font-size: 48px;
+  font-weight: 600;
+  height: 56px;
+}
+
+.experience .e_wrapper .e_status p {
+  font-size: 16px;
+  font-weight: 500;
+  height: 24px;
+  margin-top: 8px;
+}
+
+.services {
+  height: 569px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.serviceContent {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.serviceContent h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5E3BEE;
+}
+
+.serviceContent h2 {
+  margin: 12px 0;
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.serviceContent p {
+  width: 600px;
+  height: 38px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 64px;
+}
+
+.serviceCards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.serviceCards .card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 376px;
+  height: 286px;
+  -webkit-box-shadow: 37px 37px 80px rgba(0, 0, 0, 0.1);
+          box-shadow: 37px 37px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  background: #FFFFFF;
+  padding: 52px 34px;
+}
+
+.serviceCards .card img {
+  height: 36px;
+  width: 36px;
+}
+
+.serviceCards .card h3 {
+  margin: 45px 9px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.serviceCards .card p {
+  text-align: center;
+}
+
+.about {
+  background: #f9f9fc;
+  height: 778px;
+  position: relative;
+}
+
+.about .aboutcontent .aboutText {
+  padding: 110px 0;
+}
+
+.about .aboutcontent .aboutText h5 {
+  font-size: 16px;
+  color: #5E3BEE;
+}
+
+.about .aboutcontent .aboutText h2 {
+  width: 482px;
+  height: 326px;
+  font-size: 60px;
+  margin-bottom: 62px;
+}
+
+.about .aboutcontent .aboutText p {
+  height: 76px;
+  width: 584px;
+}
+
+.about .aboutcontent .aboutText a img {
+  margin-right: 10.5px;
+}
+
+.about .aboutcontent .aboutImg {
+  position: absolute;
+}
+
+.about .aboutcontent .aboutImg .p1 {
+  position: absolute;
+  left: 968.35px;
+  top: -98.39px;
+}
+
+.about .aboutcontent .aboutImg .p2 {
+  position: absolute;
+  left: 945px;
+}
+
+.about .aboutcontent .aboutImg .p3 {
+  position: absolute;
+  left: 923px;
+}
+
+.clientsImg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 125px 0;
+}
+
+.portfolioContent h5 {
+  color: #5E3BEE;
+  font-size: 16px;
+}
+
+.portfolioContent .portfolioGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 43px;
+}
+
+.portfolioContent .portfolioGrid h2 {
+  margin: 9px 0;
+}
+
+.portfolioContent .portfolioGrid .pCard {
+  width: 583px;
+  height: 532px;
+  background: #c4c4c4;
+  position: relative;
+  -webkit-box-shadow: 37px 37px 80px rgba(0, 0, 0, 0.1);
+          box-shadow: 37px 37px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+}
+
+.portfolioContent .portfolioGrid .pCard .pCardText {
+  position: absolute;
+  bottom: 0px;
+  width: 583px;
+  height: 143px;
+  background: #fff;
+  border-radius: 0 0 24px 24px;
+  padding: 33px 173px 47px 47px;
+}
+
+.portfolioContent .portfolioGrid .pCard .pCardText h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.portfolioContent .portfolioGrid .pCard .pCardText p {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

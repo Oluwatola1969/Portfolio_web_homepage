@@ -4,7 +4,7 @@ $accentClr : #5E3BEE;
 $textClr : #333333;
 
 .container{
-    max-width: 1200px; 
+    max-width: 1208px; 
     height: 100%;
     margin: 0 auto;
 }
@@ -32,6 +32,18 @@ li{
 
     a{
         font-size: 12px;
+        @extend %flex;
         
     }
+    &:hover{
+        background-color: lighten($accentClr, 5%);
+        transform: scale(.985);
+    }
+    
+
+}
+
+%flex{
+    display: flex;
+    align-items: center;
 }

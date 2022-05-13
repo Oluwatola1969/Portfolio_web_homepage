@@ -12,6 +12,8 @@
 body{
     font-family: 'Poppins', sans-serif;
    font-size: 1rem;
+   scroll-behavior: smooth;
+   transition: all .5s  ease;
 }
 
 header{
@@ -81,7 +83,7 @@ header{
     
 }
 
-
+// MAIN SECTION STARTS
 
 main{
     display: flex;
@@ -124,9 +126,249 @@ main{
            .downloadBtn{
                background-color: transparent;
                color: $textClr;
+               &:hover{
+                   border: 1px solid $accentClr
+               }
            }
        }
    }
 }
 
 
+// MAIN SECTION ENDS
+
+
+
+// EXPERIENCE SECTION STARTS
+
+.experience{
+    @extend %flex;
+   justify-content: center;
+   width: 1208px;
+   height: 314px;
+   margin: 0 auto;
+
+   .e_wrapper{
+    display: flex;
+    height: 90px;
+    padding: 93px 116px;
+    margin: 0 auto;
+
+    .e_status{
+        @extend %flex;
+        width: 271px;
+        height: 88px;
+        flex-direction: column;
+        letter-spacing: 0.5px;
+        margin-left: 40px;
+
+        h2{
+            font-size: 48px;
+            font-weight: 600;
+            height: 56px;
+        }
+
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            height: 24px;
+            margin-top: 8px;
+        }
+    }
+
+   }
+
+}
+
+// EXPERIENCE SECTION ENDS
+
+// SERVICES STARTS
+.services{
+    height: 569px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+ .serviceContent{
+    @extend %flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+    h5{
+        font-size: 16px;
+        font-weight: 500;
+        color: $accentClr;
+    }
+
+    h2{
+        margin: 12px 0;
+        font-size: 44px;
+        font-weight: 600;
+    }
+
+    p{
+        width: 600px;
+        height: 38px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 64px;
+    }
+}
+
+
+.serviceCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .card{
+        @extend %flex;
+        flex-direction: column;
+        width: 376px;
+        height: 286px;
+        box-shadow: 37px 37px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+        background: #FFFFFF;
+        padding: 52px 34px;
+
+        img{
+            height: 36px;
+            width: 36px;
+        }
+
+        h3{
+            margin: 45px 9px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+
+// SERVICES ENDS
+
+
+// ABOUT STARTS
+
+    .about{
+        background: $secClr;
+        height: 778px;
+        position: relative;
+
+        .aboutcontent{
+            @extend %flex;
+
+            .aboutText{
+                padding: 110px 0;
+
+                h5{
+                    font-size: 16px;
+                    color: $accentClr;
+                }
+
+                h2{
+                    width: 482px;
+                    height: 326px;
+                    font-size: 60px;
+                    margin-bottom: 62px;
+                }
+
+                p{
+                    height: 76px;
+                    width: 584px;
+                }
+                
+                a{
+                    img{
+                        margin-right: 10.5px;
+                    }
+                }
+            }
+
+            .aboutImg{
+                position: absolute;
+                
+                .p1{
+                position: absolute;
+                left: 968.35px;
+                top: -98.39px;
+            }
+            
+                .p2{
+                    position: absolute;
+                    left: 945px;
+                    
+                }
+                
+                .p3{
+                    position: absolute;
+                    left: 923px;
+                }
+            }
+        }
+    }
+// ABOUT ENDS
+
+// CLIENTSsection STARTS
+
+.clientsImg{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 125px 0;
+}
+
+// CLIENTSsection ENDS
+
+// portfolio starts
+
+.portfolioContent{
+    h5{
+        color: $accentClr;
+        font-size: 16px;
+    }
+
+    .portfolioGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 43px;
+        
+        h2{
+            margin: 9px 0;
+        }
+
+        .pCard{
+            width: 583px;
+            height: 532px;
+            background: #c4c4c4;
+            position: relative;
+            box-shadow: 37px 37px 80px rgba(0, 0, 0, 0.1);
+            border-radius: 24px;
+
+            .pCardText{
+                position: absolute;
+                bottom: 0px;
+                width: 583px;
+                height: 143px;
+                background: #fff;
+                border-radius: 0 0 24px 24px;
+                padding: 33px 173px 47px 47px;
+
+                h3{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                p{
+                    font-size: 16px;
+                }
+
+            }
+        }
+
+        
+    }
+}
+
+// portfolio ENDS
