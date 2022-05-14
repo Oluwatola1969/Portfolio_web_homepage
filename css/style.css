@@ -42,7 +42,7 @@ li {
           transform: scale(0.985);
 }
 
-.btn a, .experience, .experience .e_wrapper .e_status, .serviceContent, .serviceCards .card, .about .aboutcontent {
+.btn a, .experience, .experience .e_wrapper .e_status, .serviceContent, .serviceCards .card, .about .aboutcontent, .CTA .CTAcontent, .CTA .CTAcontent .CTAtext {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,6 +69,8 @@ body {
 header {
   width: 100%;
   background: #f9f9fc;
+  position: fixed;
+  z-index: 1000;
 }
 
 header .nav {
@@ -132,6 +134,17 @@ header .nav .headerLinks {
 header .nav .headerLinks a {
   margin-left: 46px;
   color: #333333;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  border-radius: 50px;
+}
+
+header .nav .headerLinks a:hover, header .nav .headerLinks a:focus {
+  background: #5E3BEE;
+  color: #fff;
 }
 
 header .nav .hiremeBtn {
@@ -210,7 +223,11 @@ main .container .mainText .downloadBtn {
 }
 
 main .container .mainText .downloadBtn:hover {
-  border: 1px solid #5E3BEE;
+  background: #F1F0FB;
+}
+
+main .container .mainImg {
+  padding-top: 66px;
 }
 
 .experience {
@@ -431,5 +448,117 @@ main .container .mainText .downloadBtn:hover {
 
 .portfolioContent .portfolioGrid .pCard .pCardText p {
   font-size: 16px;
+}
+
+.CTA {
+  height: 739px;
+  background: #fff;
+  margin-top: 132px;
+  position: relative;
+}
+
+.CTA::before {
+  content: "";
+  position: absolute;
+  height: 469px;
+  width: 1550px;
+  overflow: hidden;
+  background-color: #f9f9fc;
+  top: 0;
+  z-index: -2232;
+}
+
+.CTA .CTAcontent {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+}
+
+.CTA .CTAcontent .CTAtext {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 147px;
+}
+
+.CTA .CTAcontent .CTAtext h5 {
+  color: #5E3BEE;
+  font-size: 16px;
+}
+
+.CTA .CTAcontent .CTAtext h3 {
+  font-size: 44px;
+  margin: 13px 0;
+}
+
+.CTA .CTAcontent .CTAtext p {
+  width: 600px;
+  height: 58px;
+  text-align: center;
+  margin-bottom: 57px;
+}
+
+.CTA .CTAcontent .CTAcards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 41px;
+}
+
+.CTA .CTAcontent .CTAcards .cardCTA {
+  z-index: 100;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 36px 58px 27px 42px;
+  width: 594px;
+  height: 369px;
+  -webkit-box-shadow: 27px 37px 80px rgba(0, 0, 0, 0.1);
+          box-shadow: 27px 37px 80px rgba(0, 0, 0, 0.1);
+}
+
+.CTA .CTAcontent .CTAcards .cardCTA > p {
+  margin-top: 36px;
+  line-height: 26px;
+  width: 47ch;
+}
+
+.CTA .CTAcontent .CTAcards .cardCTA .name {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 18ch;
+      grid-template-columns: 1fr 18ch;
+  width: 218px;
+  height: 64px;
+}
+
+.CTA .CTAcontent .CTAcards .cardCTA .name p {
+  margin-left: 17px;
+}
+
+.CTA .CTAcontent .CTAcards .cardCTA .bttmcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.CTA .CTAcontent .CTAcards .cardCTA .bttmcard img:last-child {
+  width: 45px;
+  height: 45px;
+  margin-right: 35px;
 }
 /*# sourceMappingURL=style.css.map */
