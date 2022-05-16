@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gudea:wght@700&family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,900;1,600&display=swap');
 
-@import 'config';
+@import 'query';
 @import 'utilities';
 
 *{
@@ -112,6 +112,7 @@ header{
                 }
             img{
                 margin-left: 8.33px;
+                text-align: center;
             }
 
              &:hover{
